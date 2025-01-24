@@ -8,7 +8,7 @@
 
 ## About
 
-### Hosted App: https://
+### Hosted App: https://react-project-crud.vercel.app
 
 This is the frontend of the blog management application. It is built using React and connects to the Laravel backend to display and manage blog posts.
 
@@ -51,7 +51,7 @@ This is the frontend of the blog management application. It is built using React
 #### Clone the repository:
 
 ```
-git clone https://github.com/nick-r-o-s-e/
+git clone https://github.com/nick-r-o-s-e/Blog_React
 ```
 
 #### Install npm modules:
