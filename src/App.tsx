@@ -5,12 +5,10 @@ import {
   Routes,
   Navigate,
 } from "react-router-dom";
-// import BlogList from "./components/BlogList";
 import Post from "./pages/Post/Post";
 import { QueryClient, QueryClientProvider } from "react-query";
 import Navbar from "./components/Navbar";
 import Posts from "./pages/Posts/Posts";
-// import PostForm from "./pages/PostForm/PostForm";
 import PostCreate from "./pages/PostCreate";
 import PostEdit from "./pages/PostEdit";
 

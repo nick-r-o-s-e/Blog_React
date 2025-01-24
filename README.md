@@ -1,50 +1,72 @@
-# React + TypeScript + Vite
+# React Blog Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Table of Contents
 
-Currently, two official plugins are available:
+- [About](#about)
+- [Getting Started](#getting-started)
+- [Key Features](#key-features)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## About
 
-## Expanding the ESLint configuration
+### Hosted App: https://
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+This is the frontend of the blog management application. It is built using React and connects to the Laravel backend to display and manage blog posts.
 
-- Configure the top-level `parserOptions` property like this:
+## Key Features
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### User interface featuring components for:
+
+- Displaying list of blog posts.
+- Creating and editing blog posts with dynamic, validated forms.
+- Performing deletions of blog posts.
+- Displaying Errors and Loading States
+
+### Client-Side Validation
+
+- Ensures proper data input before sending to the backend.
+
+### Error and Loading States
+
+- Improves user experience with meaningful feedback.
+
+### Filtering and Sorting
+
+- Allows sorting and filtering blog posts based on status and date.
+
+### Hosting & Deployment
+
+- The frontend is fully hosted and connected to the backend API.
+- Secure API communication.
+
+## Getting Started
+
+## Follow these steps to set up and run the project locally:
+
+### Prerequisites
+
+- This https://github.com/nick-r-o-s-e/Blog_Laravel-API Laravel API should be running.
+
+- Install Node.js (latest stable version recommended).
+
+#### Clone the repository:
+
+```
+git clone https://github.com/nick-r-o-s-e/
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+#### Install npm modules:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
 ```
+npm install
+```
+
+#### Start the development server:
+
+```
+npm run dev
+```
+
+#### Access the Application
+
+1.  The frontend application will run on a local development server, usually available at http://localhost:5173.
+2.  The frontend will communicate with the backend API running at http://127.0.0.1:8000.
